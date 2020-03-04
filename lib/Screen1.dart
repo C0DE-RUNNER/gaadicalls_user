@@ -1,9 +1,12 @@
 import 'dart:async';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutterapp/settings.dart';
 import 'package:flutterapp/vendor_details.dart';
+import 'package:http/http.dart' as http;
+
 
 import 'db_helper.dart';
 
@@ -133,6 +136,18 @@ class _Screen1State extends State<Screen1> {
         ),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
+
+            FirebaseMessaging _fm = FirebaseMessaging();
+            _fm.configure(
+                onMessage: (Map<String,dynamic> message){
+                  print("onmessage");
+                }
+            );
+            _fm.subscribeToTopic("Random");
+
+            String url = 'https://gaadicalls.firebaseapp.com/update_location/'+DateTime.now().millisecondsSinceEpoch.toString()
+                +"/22/33";
+            http.get(Uri.encodeFull(url));
             /*
         Navigator.push(context,
         MaterialPageRoute(builder: (context) => Registration()));*/

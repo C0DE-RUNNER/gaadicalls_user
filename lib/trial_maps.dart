@@ -72,11 +72,3 @@ class _MyAppState extends State<MyMaps> {
     );
   }
 }
-
-/*GoogleMap(
-          onMapCreated: _onMapCreated,
-          initialCameraPosition: CameraPosition(
-            target: _center,
-            zoom: 11.0,
-          ),
-        ),*/

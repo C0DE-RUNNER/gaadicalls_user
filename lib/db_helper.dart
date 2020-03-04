@@ -12,7 +12,7 @@ class DBhelper{
   static const String ID = 'id';
   static const String Name = 'vname';
   static const String TABLE = 'Vendordata';
-  static const String DB_name = 'Vendordb4';
+  static const String DB_name = 'Vendordb7';
 
 
 Future<Database> get db async{

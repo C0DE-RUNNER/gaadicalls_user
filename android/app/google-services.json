@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "142609654495",
+    "firebase_url": "https://gaadicalls.firebaseio.com",
+    "project_id": "gaadicalls",
+    "storage_bucket": "gaadicalls.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142609654495:android:7a0bd101731f47cb5dff6a",
+        "android_client_info": {
+          "package_name": "com.example.flutterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142609654495-pkaqo89ftnsc6659d4e93fg5raf92phm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBye0tXOMkOnEpJA7_kbaMMfSnwfvKncBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142609654495-pkaqo89ftnsc6659d4e93fg5raf92phm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
